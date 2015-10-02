@@ -1,0 +1,15 @@
+REGEDIT
+; ¬озможно, этот файл .REG используетс€ программой установки.
+;   ≈сли программа SETUP недоступна, записи, расположенные ниже, будут зарегистрированы
+;   в InitInstance автоматически с вызовом в
+;   CWinApp::RegisterShellFileTypes и COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.jpg = SimpleEditor.Document
+HKEY_CLASSES_ROOT\SimpleEditor.Document\shell\open\command = SimpleEditor.EXE %1
+HKEY_CLASSES_ROOT\SimpleEditor.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\SimpleEditor.Document\shell\open\ddeexec\application = SimpleEditor
+    ; примечание: приложение необ€зательно
+    ;  (по умолчанию дл€ имени приложени€ в команде)
+
+HKEY_CLASSES_ROOT\SimpleEditor.Document = SimpleEditor.Document
+

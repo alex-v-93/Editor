@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleEditor", "SimpleEditor\SimpleEditor.vcxproj", "{625C2D68-7C8D-4A12-AD4B-CE4AD1A40E80}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleEditorHandlers", "SimpleEditorHandlers\SimpleEditorHandlers.vcxproj", "{2DDA21E8-6775-47EF-8DE1-658846332FED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{625C2D68-7C8D-4A12-AD4B-CE4AD1A40E80}.Debug|Win32.ActiveCfg = Debug|Win32
+		{625C2D68-7C8D-4A12-AD4B-CE4AD1A40E80}.Debug|Win32.Build.0 = Debug|Win32
+		{625C2D68-7C8D-4A12-AD4B-CE4AD1A40E80}.Release|Win32.ActiveCfg = Release|Win32
+		{625C2D68-7C8D-4A12-AD4B-CE4AD1A40E80}.Release|Win32.Build.0 = Release|Win32
+		{2DDA21E8-6775-47EF-8DE1-658846332FED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DDA21E8-6775-47EF-8DE1-658846332FED}.Debug|Win32.Build.0 = Debug|Win32
+		{2DDA21E8-6775-47EF-8DE1-658846332FED}.Release|Win32.ActiveCfg = Release|Win32
+		{2DDA21E8-6775-47EF-8DE1-658846332FED}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
