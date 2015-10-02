@@ -11,6 +11,7 @@
 
 #include "SimpleEditorDoc.h"
 #include "SimpleEditorView.h"
+#include <windowsx.h>
 
 
 #ifdef _DEBUG
@@ -195,6 +196,7 @@ void CSimpleEditorView::DrawIplImage(CDC* pDc, Mat* pImg)
 	
 	HBITMAP hBi = ConvertIplImageToHBITMAP(&img);
 	SelectObject(pDc->m_hDC, hBi);
+	DeleteBitmap(hBi);
 	//GetObject(hBi, sizeof(bi), &bi);
 
 	//char* buf = IplImageToBuffer(pImg);
