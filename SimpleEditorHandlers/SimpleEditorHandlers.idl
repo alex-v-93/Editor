@@ -1,0 +1,35 @@
+// SimpleEditorHandlers.idl: источник IDL для SimpleEditorHandlers
+//
+
+// Этот файл будет обработан средством MIDL для
+// создания библиотеки типов (SimpleEditorHandlers.tlb) и кода маршалирования.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(2BDF5985-29C1-49F3-8062-4286DB179247),
+	pointer_default(unique)
+]
+interface IPreview : IUnknown
+{
+};
+
+[
+	uuid(07A44172-278F-4FE7-B464-A1E8CF1999E2),
+	version(1.0),
+]
+library SimpleEditorHandlersLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(71CFF30D-2377-43DD-9FEF-C352B720115C)
+	]
+	coclass Preview
+	{
+		[default] interface IPreviewHandler;
+	};
+};
+
+import "shobjidl.idl";
